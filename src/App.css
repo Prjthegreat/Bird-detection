@@ -21,6 +21,10 @@
   pointer-events: none;
 }
 
+/* fixing the css of error toast */
+.ct-heading{
+  font-size: 28px !important;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -21,7 +21,7 @@ const About = () => {
         }
     ]
   return (
-    <div>
+    <div className='about-main' >
    
       <div className='profile-card-flex' >
 

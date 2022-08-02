@@ -34,12 +34,17 @@
     padding: 12px;
     /* margin-left: 10px; */
     background: linear-gradient(to right, #00878b, #00e2ab);
+    /* background: linear-gradient(to right, #00868b9c, #00e2a983); */
     border: none;
     border-radius: 7px;
     /* font-weight: 700; */
     font-size: 10pt;
     cursor: pointer;
     color:white;
+  }
+  .submitButton:disabled{
+    background: linear-gradient(to right, #00868b9c, #00e2a983) ;
+    cursor: not-allowed;
   }
   /* .submitButton:hover {
     background: #efefef;

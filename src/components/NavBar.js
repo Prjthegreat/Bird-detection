@@ -1,11 +1,15 @@
-import React,{useState} from 'react'
+import React,{useState,useContext,useEffect} from 'react'
 import { NavLink } from 'react-router-dom'
+import Loader from './Loader';
 import './NavBar.css'
+import { AuthContext } from '../authcontext/AuthContext';
 const NavBar = () => {
     const [click, setClick] = useState(false);
-
+    const auth=useContext(AuthContext)
     const handleClick = () => setClick(!click);
     const Close = () => setClick(false);
+
+ 
   return (
     <div>
     <div className={click ? "main-container" : ""}  onClick={()=>Close()} />
@@ -18,6 +22,12 @@ const NavBar = () => {
          </NavLink>
          </div> 
          <ul className={click ? "nav-menu active" : "nav-menu"}>
+
+         { auth.loading && <li style={{ display:'flex',alignItems:'center' }} >
+             <Loader />
+             </li> 
+           }
+
            <li className="nav-item">
              <NavLink
                exact

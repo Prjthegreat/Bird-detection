@@ -63,7 +63,8 @@
 	.profile-card header img{
 		border-radius: 100%;
 		overflow: hidden;
-		width: 150px;
+		width: 170px;
+		height:200px;
 		/*border: 1px solid rgba(255,255,255,.5);*/
 		box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
         margin-bottom: 10px;

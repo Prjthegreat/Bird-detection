@@ -53,7 +53,7 @@ class ImageUpload extends Component {
             <button className="submitButton" 
               type="submit"
               
-              onClick={(e)=>this._handleSubmit(e)}>Predict</button>
+              onClick={(e)=>this._handleSubmit(e)} disabled={this.props.loading || this.props.imgdata===null} >Predict</button>
           </form>
           {/* <div className="imgPreview">
             {$imagePreview}

@@ -1,0 +1,30 @@
+.progresser {
+    width: 6rem;
+    height: auto;
+}
+.progresser__bar {
+    width: 6rem;
+    height: 0.7rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+.progresser__bar-item {
+    width: 3rem;
+    height: 0.8rem;
+    margin: 0 0 0 -2rem;
+    border-radius: 1rem;
+    background-color: #000;
+    animation: progresser 1.5s infinite cubic-bezier(0.76, 0, 0.24, 1);
+}
+@keyframes progresser {
+    0% {
+        transform: translateX(0);
+   }
+    50% {
+        transform: translateX(7rem);
+   }
+    100% {
+        transform: translateX(0);
+   }
+}
